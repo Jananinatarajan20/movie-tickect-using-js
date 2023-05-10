@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Ticket Booking - Book Tickets</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Movie Ticket Booking</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="now-showing.html">Now Showing</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Book Tickets</h2>
+		<form action="#" method="post">
+			<label for="movie">Select a movie:</label>
+			<select id="movie" name="movie" required>
+				<option value="">--Select a movie--</option>
+				<option value="movie1">PONNIYIN SELVAN 2</option>
+				<option value="movie2">PATHUTHALA</option>
+				<option value="movie3">VIDUTHALAI</option>
+			</select>
+			<label for="seats">Select the number of seats:</label>
+			<input type="number" id="seats" name="seats" min="1" max="10" required>
+			<p>Available seats: 50</p>
+			<input type="submit" value="Book Tickets">
+			<input type="reset" value="Reset">
+<div id="success-message" style="display: none;">Booking successfully created!</div>
+		</form>
+	</main>
+	<footer>
+		<p>&copy; 2023 Movie Ticket Booking</p>
+	</footer>
+</body>
+</html>
